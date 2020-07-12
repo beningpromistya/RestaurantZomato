@@ -21,8 +21,8 @@
     <string name="closed">Closed</string>
     <string name="looking_for_food_delivery">Looking for food delivery?</string>
     <string name="order_food_online_from">Order food online from</string>
-    <string name="this_restaurant_is_not_accepting_food_delivery_orders_right_now">This restaurant is not accepting food delivery orders right now</string>
-    <string name="currently_closed_for_delivery">Currently closed for delivery</string>
+    <string name="this_restaurant_is_not_accepting_food_delivery_orders_right_now">Restoran ini tidak menerima delivey order untuk saat ini</string>
+    <string name="currently_closed_for_delivery">Delivery is not available</string>
     <string name="book_a_table">Book a table</string>
     <string name="order_online">Order online</string>
     <string name="search_restaurants">Search restaurants</string>
