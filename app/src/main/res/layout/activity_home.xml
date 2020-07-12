@@ -10,7 +10,23 @@
     android:background="@color/bg_activity"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.splash.SplashActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="?attr/homeAsUpIndicator">
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restoran Zomato"
+            android:textColor="@color/white"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
