@@ -65,8 +65,8 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
     View reviewsBtn;
     @BindView(R.id.reviewsCount)
     TextView reviewsCount;
-    @BindView(R.id.openInZomato)
-    View openInZomato;
+//    @BindView(R.id.openInZomato)
+//    View openInZomato;
     @BindView(R.id.shareRestaurant)
     View shareRestaurant;
     @BindView(R.id.layoutTableBooking)
@@ -182,16 +182,16 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
         reviewsBtn.setOnClickListener(v -> {
         });
 
-        openInZomato.setOnClickListener(v -> {
-            try {
-                Intent openInZomatoApp = new Intent(Intent.ACTION_VIEW);
-                openInZomatoApp.setData(Uri.parse(restaurantDetailResponse.getDeeplink()));
-                startActivity(openInZomatoApp);
-            } catch (Exception e) {
-                e.printStackTrace();
-                CommonUtils.showShortToast(this, getString(R.string.zomato_app_not_installed));
-            }
-        });
+//        openInZomato.setOnClickListener(v -> {
+//            try {
+//                Intent openInZomatoApp = new Intent(Intent.ACTION_VIEW);
+//                openInZomatoApp.setData(Uri.parse(restaurantDetailResponse.getDeeplink()));
+//                startActivity(openInZomatoApp);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                CommonUtils.showShortToast(this, getString(R.string.zomato_app_not_installed));
+//            }
+//        });
 
         //Share restaurant link
         shareRestaurant.setOnClickListener(v -> {

@@ -32,7 +32,7 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
-        setContentView(R.layout.activity_splash);
+//        setContentView(R.layout.activity_splash);
 
         setUnBinder(ButterKnife.bind(this));
 
