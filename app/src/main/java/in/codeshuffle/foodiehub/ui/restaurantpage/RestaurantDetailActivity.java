@@ -71,8 +71,8 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
     View layoutTableBooking;
     @BindView(R.id.tableBookingStatus)
     TextView tableBookingStatus;
-    @BindView(R.id.layoutSeeEvents)
-    View layoutSeeEvents;
+//    @BindView(R.id.layoutSeeEvents)
+//    View layoutSeeEvents;
     @BindView(R.id.layoutOnlineOrder)
     View layoutOnlineOrder;
     @BindView(R.id.orderAvailable)
@@ -217,7 +217,7 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
         }
 
         //Online order
-        if (restaurantDetailResponse.getHasOnlineDelivery().equals("1")) {
+        if (restaurantDetailResponse.getHasOnlineDelivery().equals("0")) {
             layoutOnlineOrder.setVisibility(View.VISIBLE);
 
             boolean isDeliveringNow = restaurantDetailResponse.getIsDeliveringNow().equals("1");
@@ -230,10 +230,10 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
         }
 
         //Events
-        layoutSeeEvents.setOnClickListener(v -> {
-            CustomTabsIntent customTabsIntent = CommonUtils.getChromeCustomTab(R.color.colorPrimary);
-            customTabsIntent.launchUrl(this, Uri.parse(restaurantDetailResponse.getEventsUrl()));
-        });
+//        layoutSeeEvents.setOnClickListener(v -> {
+//            CustomTabsIntent customTabsIntent = CommonUtils.getChromeCustomTab(R.color.colorPrimary);
+//            customTabsIntent.launchUrl(this, Uri.parse(restaurantDetailResponse.getEventsUrl()));
+//        });
     }
 
 }

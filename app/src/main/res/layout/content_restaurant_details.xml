@@ -27,7 +27,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="216dp"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -42,8 +42,8 @@
                             android:id="@+id/restaurantThumb"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:layout_marginEnd="10dp"
                             android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
                             tools:src="@tools:sample/avatars" />
 
                         <LinearLayout
@@ -111,50 +111,50 @@
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp">
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                        <!--Reviews count-->
+                    <!--Reviews count-->
+                    <LinearLayout
+                        android:id="@+id/reviewsBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="?selectableItemBackground"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/reviews"
+                            android:src="@drawable/ic_star" />
+
                         <LinearLayout
-                            android:id="@+id/reviewsBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:background="?selectableItemBackground"
-                            android:orientation="horizontal">
+                            android:layout_marginStart="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_gravity="center_vertical"
-                                android:contentDescription="@string/reviews"
-                                android:src="@drawable/ic_star" />
-
-                            <LinearLayout
+                            <TextView
+                                android:id="@+id/reviewsCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="3dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
+                                android:fontFamily="@font/circular_book"
+                                android:text="@string/reviews"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
 
-                                <TextView
-                                    android:id="@+id/reviewsCount"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/circular_book"
-                                    android:text="@string/reviews"
-                                    android:textColor="@color/gray"
-                                    android:textSize="14sp" />
-
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="2dp"
-                                    android:background="@drawable/dotted_line_green" />
-
-                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@drawable/dotted_line_green" />
 
                         </LinearLayout>
 
                     </LinearLayout>
+
+                </LinearLayout>
 
                 </LinearLayout>
 
@@ -176,13 +176,10 @@
                         android:id="@+id/layoutOnlineOrder"
                         layout="@layout/layout_online_order" />
 
-                    <include
-                        android:id="@+id/layoutSeeEvents"
-                        layout="@layout/layout_see_events" />
 
                 </LinearLayout>
 
             </LinearLayout>
-        
+
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>
