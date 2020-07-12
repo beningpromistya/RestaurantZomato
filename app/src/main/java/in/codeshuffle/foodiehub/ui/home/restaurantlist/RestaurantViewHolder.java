@@ -20,8 +20,8 @@ class RestaurantViewHolder extends RecyclerView.ViewHolder {
     TextView tvName;
     @BindView(R.id.rating)
     TextView tvRating;
-    @BindView(R.id.cuisine)
-    TextView tvCuisine;
+//    @BindView(R.id.cuisine)
+//    TextView tvCuisine;
     @BindView(R.id.location)
     TextView tvLocation;
     @BindView(R.id.costForTwo)

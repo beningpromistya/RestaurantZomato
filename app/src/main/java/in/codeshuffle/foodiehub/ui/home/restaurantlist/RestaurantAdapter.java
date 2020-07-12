@@ -54,7 +54,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             RestaurantViewHolder restaurantHolder = (RestaurantViewHolder) holder;
 
             restaurantHolder.tvName.setText(restaurant.getName());
-            restaurantHolder.tvCuisine.setText(restaurant.getCuisines());
+//            restaurantHolder.tvCuisine.setText(restaurant.getCuisines());
             restaurantHolder.tvLocation.setText(restaurant.getLocation().getLocalityVerbose());
             restaurantHolder.tvCostForTwo.setText(String.format("%s%s for two people (approx.)",
                     restaurant.getCurrency(), restaurant.getAverageCostForTwo()));
