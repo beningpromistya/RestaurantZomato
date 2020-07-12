@@ -39,8 +39,6 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
 
     @BindView(R.id.layoutContent)
     View layoutContent;
-    @BindView(R.id.shimmer_details_page)
-    View layoutLoading;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.toolbar_layout)
@@ -125,13 +123,11 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
     @Override
     public void showLoading() {
         layoutContent.setVisibility(View.GONE);
-        layoutLoading.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideLoading() {
         layoutContent.setVisibility(View.VISIBLE);
-        layoutLoading.setVisibility(View.GONE);
     }
 
     @Override

@@ -48,8 +48,6 @@ public class HomeActivity extends BaseActivity
 
     @BindView(R.id.restaurantList)
     RecyclerView restaurantList;
-    @BindView(R.id.shimmer)
-    View shimmer;
     @BindView(R.id.contentLayout)
     View contentLayout;
     @BindView(R.id.nothingFound)
@@ -290,13 +288,11 @@ public class HomeActivity extends BaseActivity
         restaurantsAdapter.clearRestaurants();
         restaurantList.addOnScrollListener(restaurantListScrollListener);
         contentLayout.setVisibility(View.GONE);
-        shimmer.setVisibility(View.VISIBLE);
         nothingFound.setVisibility(View.GONE);
     }
 
     @Override
     public void hideLoading() {
-        shimmer.setVisibility(View.GONE);
         contentLayout.setVisibility(View.VISIBLE);
     }
 

@@ -233,27 +233,6 @@
 
                     </LinearLayout>
 
-<!--                    <include layout="@layout/component_dashed_divider" />-->
-
-<!--                    <Button-->
-<!--                        android:id="@+id/openInZomato"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:background="@drawable/gradient_green"-->
-<!--                        android:drawableEnd="@drawable/ic_right_white"-->
-<!--                        android:fontFamily="@font/circular_bold"-->
-<!--                        android:gravity="center_vertical"-->
-<!--                        android:paddingStart="15dp"-->
-<!--                        android:paddingTop="10dp"-->
-<!--                        android:paddingEnd="15dp"-->
-<!--                        android:paddingBottom="10dp"-->
-<!--                        android:text="@string/open_in_zomato_app"-->
-<!--                        android:textAllCaps="false"-->
-<!--                        android:textColor="@color/white" />-->
-
-<!--                    <include layout="@layout/component_dashed_divider" />-->
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -286,11 +265,6 @@
 
         </LinearLayout>
 
-        <include
-            android:visibility="gone"
-            tools:visibility="gone"
-            android:id="@+id/shimmer_details_page"
-            layout="@layout/shimmer_details_page" />
     </RelativeLayout>
 
 </androidx.core.widget.NestedScrollView>
