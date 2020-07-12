@@ -3,33 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:background="@drawable/search_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/search_icon" />
+        android:layout_height="1px"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/search_query"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="1dp"
             android:layout_margin="0dp"
             android:layout_weight="1"
-            android:singleLine="true"
             android:background="@null"
             android:fontFamily="@font/circular_book"
             android:imeOptions="actionSearch"
+            android:singleLine="true"
             android:textSize="14sp"
             tools:hint="@string/search_for_locations" />
 

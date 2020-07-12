@@ -121,17 +121,17 @@ public class LocationActivity extends BaseActivity implements LocationMvpView, L
         super.onDestroy();
     }
 
-    @Override
-    public void onBackPressed() {
-        if (!etSearchLocations.getText().toString().equals("")) {
-            etSearchLocations.setText("");
-            etSearchLocations.clearFocus();
-            mPresenter.fetchLocations("", preferencesHelper.getLatitude(),
-                    preferencesHelper.getLongitude());
-        } else {
-            super.onBackPressed();
-        }
-    }
+//    @Override
+//    public void onBackPressed() {
+//        if (!etSearchLocations.getText().toString().equals("")) {
+//            etSearchLocations.setText("");
+//            etSearchLocations.clearFocus();
+//            mPresenter.fetchLocations("", preferencesHelper.getLatitude(),
+//                    preferencesHelper.getLongitude());
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
 
     @Override
     public void onLocationList(LocationResponse locationResponse) {

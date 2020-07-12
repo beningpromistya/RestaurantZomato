@@ -233,14 +233,14 @@ public class HomeActivity extends BaseActivity
     }
 
 
-    @OnClick({R.id.location})
-    void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.location:
-                startActivity(LocationActivity.getStartIntent(this));
-                break;
-        }
-    }
+//    @OnClick({R.id.location})
+//    void onViewClicked(View view) {
+//        switch (view.getId()) {
+//            case R.id.location:
+//                startActivity(LocationActivity.getStartIntent(this));
+//                break;
+//        }
+//    }
 
     @Override
     public void onOpenRestaurantDetail(String restaurantId) {
@@ -307,17 +307,17 @@ public class HomeActivity extends BaseActivity
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        if (!etSearchRestaurants.getText().toString().equals("")) {
-            etSearchRestaurants.setText("");
-            etSearchRestaurants.clearFocus();
-            mPresenter.fetchRestaurants("", preferencesHelper.getLatitude(),
-                    preferencesHelper.getLongitude(), 0);
-        } else {
-            super.onBackPressed();
-        }
-    }
+//    @Override
+//    public void onBackPressed() {
+//        if (!etSearchRestaurants.getText().toString().equals("")) {
+//            etSearchRestaurants.setText("");
+//            etSearchRestaurants.clearFocus();
+//            mPresenter.fetchRestaurants("", preferencesHelper.getLatitude(),
+//                    preferencesHelper.getLongitude(), 0);
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
 
     @Override
     protected void onDestroy() {

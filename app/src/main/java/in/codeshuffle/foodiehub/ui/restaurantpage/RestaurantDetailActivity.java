@@ -217,16 +217,18 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
         }
 
         //Online order
-        if (restaurantDetailResponse.getHasOnlineDelivery().equals("0")) {
+        if (restaurantDetailResponse.getHasOnlineDelivery().equals("1")) {
             layoutOnlineOrder.setVisibility(View.VISIBLE);
 
             boolean isDeliveringNow = restaurantDetailResponse.getIsDeliveringNow().equals("1");
             layoutOrderAvailable.setVisibility(isDeliveringNow ? View.VISIBLE : View.GONE);
             layoutOrderNotAvailable.setVisibility(isDeliveringNow ? View.GONE : View.VISIBLE);
-            layoutOnlineOrder.setOnClickListener(v
-                    -> CommonUtils.showShortToast(this, getString(R.string.online_order)));
         } else {
-            layoutOnlineOrder.setVisibility(View.GONE);
+            layoutOnlineOrder.setVisibility(View.VISIBLE);
+
+            boolean isDeliveringNow = restaurantDetailResponse.getIsDeliveringNow().equals("1");
+            layoutOrderAvailable.setVisibility(isDeliveringNow ? View.VISIBLE : View.GONE);
+            layoutOrderNotAvailable.setVisibility(isDeliveringNow ? View.GONE : View.VISIBLE);
         }
 
         //Events
