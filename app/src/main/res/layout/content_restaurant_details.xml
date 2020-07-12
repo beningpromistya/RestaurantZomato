@@ -111,83 +111,6 @@
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp">
 
-                        <!--Directions-->
-                        <LinearLayout
-                            android:id="@+id/directionsBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="?selectableItemBackground"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_gravity="center_vertical"
-                                android:contentDescription="@string/directions"
-                                android:src="@drawable/ic_direction" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="3dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/circular_book"
-                                    android:text="@string/directions"
-                                    android:textColor="@color/gray"
-                                    android:textSize="14sp" />
-
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="2dp"
-                                    android:background="@drawable/dotted_line_green" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <!--Menu-->
-                        <LinearLayout
-                            android:id="@+id/menuBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:background="?selectableItemBackground"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:layout_gravity="center_vertical"
-                                android:contentDescription="@string/menu"
-                                android:src="@drawable/ic_restaurant_menu" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="3dp"
-                                android:gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/circular_book"
-                                    android:text="@string/menu"
-                                    android:textColor="@color/gray"
-                                    android:textSize="14sp" />
-
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="2dp"
-                                    android:background="@drawable/dotted_line_green" />
-
-                            </LinearLayout>
-
                         </LinearLayout>
 
                         <!--Reviews count-->
@@ -260,11 +183,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
-            <include layout="@layout/layout_think_food_think_us" />
-
-        </LinearLayout>
-
+        
     </RelativeLayout>
-
 </androidx.core.widget.NestedScrollView>

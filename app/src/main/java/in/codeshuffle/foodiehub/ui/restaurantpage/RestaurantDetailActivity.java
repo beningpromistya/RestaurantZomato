@@ -55,10 +55,10 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
     TextView ratings;
     @BindView(R.id.location)
     TextView location;
-    @BindView(R.id.directionsBtn)
-    View directionsBtn;
-    @BindView(R.id.menuBtn)
-    View menuBtn;
+//    @BindView(R.id.directionsBtn)
+//    View directionsBtn;
+//    @BindView(R.id.menuBtn)
+//    View menuBtn;
     @BindView(R.id.reviewsBtn)
     View reviewsBtn;
     @BindView(R.id.reviewsCount)
@@ -157,18 +157,18 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
         ratings.setBackgroundColor(Color.parseColor(String.format("#%s",
                 restaurantDetailResponse.getUserRating().getRatingColor())));
 
-        directionsBtn.setOnClickListener(v -> {
-            String uri = String.format(Locale.ENGLISH, "geo:%s,%s",
-                    restaurantDetailResponse.getLocation().getLatitude(),
-                    restaurantDetailResponse.getLocation().getLongitude());
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-            startActivity(intent);
-        });
+//        directionsBtn.setOnClickListener(v -> {
+//            String uri = String.format(Locale.ENGLISH, "geo:%s,%s",
+//                    restaurantDetailResponse.getLocation().getLatitude(),
+//                    restaurantDetailResponse.getLocation().getLongitude());
+//            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+//            startActivity(intent);
+//        });
 
-        menuBtn.setOnClickListener(v -> {
-            CustomTabsIntent customTabsIntent = CommonUtils.getChromeCustomTab(R.color.colorPrimary);
-            customTabsIntent.launchUrl(this, Uri.parse(restaurantDetailResponse.getMenuUrl()));
-        });
+//        menuBtn.setOnClickListener(v -> {
+//            CustomTabsIntent customTabsIntent = CommonUtils.getChromeCustomTab(R.color.colorPrimary);
+//            customTabsIntent.launchUrl(this, Uri.parse(restaurantDetailResponse.getMenuUrl()));
+//        });
 
         //Reviews
         reviewsCount.setText(MessageFormat.format("{0} {1}",
