@@ -1,41 +1,19 @@
 <resources>
-    <string name="app_name">FoodieHub</string>
+    <string name="app_name">Restaurant Zomato</string>
     <string name="app_description">Your food guide, powered by Zomato!</string>
 
 
     <!--Toolbar menus-->
     <string name="share">Share</string>
-
-    <!--Drawer-->
-
-    <!--Drawer Menus-->
-
-    <!--App Message-->
     <string name="something_went_wrong">Some Error Occurred!</string>
-
-    <!--Login-->
-
-    <!--Login Validation-->
-
-    <!--about fragment-->
-
-    <!--rating dialog-->
-
-    <!--play store-->
-
-    <!--button-->
-
-    <!--feed-->
-
-    <!--empty state-->
 
     <string name="no_internet">No Internet</string>
     <string name="your_location">Your location</string>
     <string name="directions">Directions</string>
     <string name="reviews">Reviews</string>
     <string name="menu">Menu</string>
-    <string name="open_in_zomato_app">Open in Zomato app</string>
-    <string name="zomato_app_not_installed">Zomato app not installed</string>
+<!--    <string name="open_in_zomato_app">Open in Zomato app</string>-->
+<!--    <string name="zomato_app_not_installed">Zomato app not installed</string>-->
     <string name="search_for_locations">Search for locations...</string>
     <string name="share_using">Share using</string>
     <string name="link_format_zomato_restaurant">http://zoma.to/r/</string>
@@ -48,7 +26,7 @@
     <string name="book_a_table">Book a table</string>
     <string name="order_online">Order online</string>
     <string name="search_restaurants">Search restaurants</string>
-    <string name="app_subtitle">Think food, think us!</string>
+<!--    <string name="app_subtitle">Think food, think us!</string>-->
     <string name="see_events_here">See Events here</string>
     <string name="have_a_sneak_peak_into_the_events_happening_here">Have a sneak peak into the events happening here</string>
     <string name="online_order">Online order</string>

@@ -22,6 +22,7 @@ import in.codeshuffle.foodiehub.FoodieHubApp;
 import in.codeshuffle.foodiehub.R;
 import in.codeshuffle.foodiehub.di.component.ActivityComponent;
 import in.codeshuffle.foodiehub.di.component.DaggerActivityComponent;
+import in.codeshuffle.foodiehub.di.component.DaggerActivityComponent;
 import in.codeshuffle.foodiehub.di.module.ActivityModule;
 import in.codeshuffle.foodiehub.service.LocationService;
 import in.codeshuffle.foodiehub.util.CommonUtils;
